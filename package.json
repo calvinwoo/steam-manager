@@ -1,0 +1,25 @@
+{
+  "name": "steam-manager",
+  "version": "1.0.0",
+  "description": "Browse and launch Steam games from the web.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calvinwoo/steam-manager.git"
+  },
+  "author": "Calvin Woo <calvinwoo32@gmail.com> (http://calvinwoo.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calvinwoo/steam-manager/issues"
+  },
+  "homepage": "https://github.com/calvinwoo/steam-manager",
+  "dependencies": {
+    "express": "^4.12.3",
+    "express-handlebars": "^2.0.0",
+    "node-jsx": "^0.12.4",
+    "react": "^0.13.1"
+  }
+}
