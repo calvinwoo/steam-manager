@@ -1,3 +1,6 @@
+/** @jsx React.DOM */
+var React = require('react');
+
 var Library = React.createClass({
   getInitialState: function() {
     return {
@@ -59,7 +62,4 @@ var SearchResults = React.createClass({
   }
 });
 
-React.render(
-  <Library />,
-  document.getElementById('mount-point')
-);
+module.exports = Library;
