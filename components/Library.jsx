@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var React = require('react');
 
 var Library = React.createClass({
@@ -29,7 +28,7 @@ var Library = React.createClass({
   render: function() {
     return (
       <div>
-        <Welcome userName={this.props.userName} />
+        <Welcome />
         <SearchBox onChange={this.searchGames} />
 
         <SearchResults sortedGames={this.state.sortedGames} />
@@ -41,7 +40,7 @@ var Library = React.createClass({
 var Welcome = React.createClass({
   render: function() {
     return (
-      <h2>Hello {this.props.userName}!</h2>
+      <h2>Hello</h2>
     )
   }
 });

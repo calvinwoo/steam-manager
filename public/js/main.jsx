@@ -1,8 +1,9 @@
-/** @jsx React.DOM */
 var React = require('react');
-var Library = require('../../components/Library.jsx');
+var Router = require('react-router');
+var routes = require('../../routes.jsx');
 
-React.render(
-  <Library userName={userName} />,
-  document.getElementById('mount-point')
-);
+document.addEventListener("DOMContentLoaded", function(event) {
+    Router.run(routes, Router.HistoryLocation, function (Handler, state) {
+      React.render(<Handler />, document.body);
+    });
+});
