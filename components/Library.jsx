@@ -29,11 +29,20 @@ var Library = React.createClass({
   render: function() {
     return (
       <div>
+        <Welcome userName={this.props.userName} />
         <SearchBox onChange={this.searchGames} />
 
         <SearchResults sortedGames={this.state.sortedGames} />
       </div>
     );
+  }
+});
+
+var Welcome = React.createClass({
+  render: function() {
+    return (
+      <h2>Hello {this.props.userName}!</h2>
+    )
   }
 });
 

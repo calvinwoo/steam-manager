@@ -3,6 +3,6 @@ var React = require('react');
 var Library = require('../../components/Library.jsx');
 
 React.render(
-  <Library />,
+  <Library userName={userName} />,
   document.getElementById('mount-point')
 );
